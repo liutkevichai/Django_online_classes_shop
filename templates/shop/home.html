@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Fiber Arts School!{% endblock %}
+
+{% block content %}
+<h1 class="mt-5" align="center">Welcome to Fiber Arts School!</h1>
+
+<div class="row">
+    {% for course in courses %}
+      <div class="col-sm-4">
+        {% include 'shop/card.html' with course=course %}
+      </div>
+    {% endfor %}
+</div>
+{% endblock %}

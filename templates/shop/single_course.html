@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+{% include 'shop/card.html' with course=course %}
+{% endblock %}
+
+<!--<h2 class="mt-5">{{ course.title }}</h2>-->
+<!--<h3>{{ course.category }}</h3>-->
+<!--<h3>Price: {{ course.price }}$</h3>-->
+<!--<h3>Students quantity: {{ course.students_qty }}</h3>-->
+<!--<button class="btn btn-primary">Buy</button>-->
+

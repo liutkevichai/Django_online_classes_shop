@@ -1,0 +1,19 @@
+<div class="card mt-5 mb-3" style="max-width: 540px;">
+  <div class="row g-2">
+    <div class="col md-7">
+      <img src={{ course.image }} class="img-fluid rounded-start" alt={{ course.title }}>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h4 class="card-title">{{ course.title }}</h4>
+        <p class="card-text">Students quantity: {{ course.students_qty }}</p>
+        <p class="card-text"><a href="">Reviews: {{ course.reviews_qty }}</a></p>
+        <h6 class="card-text">Price: {{ course.price }}$</h6>
+        <p class="card-text"><small class="text-body-secondary">{{ course.category }}</small></p>
+        <a href={% url "shop:single_course" course.id %}>
+          <button class="btn btn-primary">Buy</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
